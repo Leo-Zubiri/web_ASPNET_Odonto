@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sistema.master.cs" Inherits="ASPNET_Odonto.Sistema" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="css/journal_bootstrap.min.css"/>
+
+    <title>OdonTam - Home</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="text-center">
+    <form id="form1" runat="server">
+        <!-- navbar - o barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <img class="me-2" src="img/ico/diente_06.png" alt="" width="50"/>
+        <a class="navbar-brand" href="#">OdonTam</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        
+          <span class="navbar-toggler-icon"></span>
+        </button>    
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="Home.aspx">Home
+                <!-- <span class="visually-hidden">(current)</span> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="medicos.aspx">Medicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pacientes.aspx">Pacientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="citas.aspx">Citas</a>
+            </li>
+          </ul>                         
+          <asp:Button ID="btnCerrar" runat="server" Text="Cerrar Sesión" OnClick="BtnCerrar_Click"/>
+        </div>
+      </div>
+    </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="sisContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
