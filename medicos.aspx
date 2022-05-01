@@ -3,7 +3,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="sisContent" runat="server">
-    <br />
     <h1>
         Médicos
     </h1>

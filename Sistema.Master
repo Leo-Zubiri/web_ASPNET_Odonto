@@ -45,11 +45,30 @@
         </div>
       </div>
     </nav>
-        <div>
-            <asp:ContentPlaceHolder ID="sisContent" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+        
     </form>
+    <div>
+        <br />
+        <asp:ContentPlaceHolder ID="sisContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+   <br /> <br /> <br /> <br />  <br /> <br /> <br /> <br />
+   <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3 bg-primary" >
+        © 2022 Copyright:
+            <br />
+            Zubiri Valdez Hedson - 
+            Carrasco Garcia Orlando -
+            Sosa Valdes Brandon <br />
+            Borjas Mercado Luis -
+            Hernandez Baez Manuel
+        
+      </div>
+      <!-- Copyright -->
+    </footer>
 </body>
+
 </html>
+
